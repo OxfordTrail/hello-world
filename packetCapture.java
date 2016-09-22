@@ -23,7 +23,7 @@ public class packetCapture {
                 .toString());  
             return;  
         }  
-		PcapIf device = allDevs.get(1); //selecting the first device
+		PcapIf device = allDevs.get(1); //selecting the device, 0 to 4(in most cases)
 		
 		//Opening the selected device
 		int  snaplen =64*1024; //capture all packet,no truncation	
